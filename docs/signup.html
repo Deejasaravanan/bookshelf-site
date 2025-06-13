@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup | Bookshelf</title>
+  <style>
+    body {
+      background-color: antiquewhite;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .container {
+      background-color: whitesmoke;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .container img {
+      width: 100px;
+      display: block;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: "Dancing Script", cursive;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .words {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .social {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .social button {
+      flex: 1;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .google {
+      background-color: white;
+    }
+
+    #fb {
+      background-color: #4267b2;
+      color: white;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: none
+    }
+
+    .checkbox {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    .checkbox input {
+      margin-right: 5px;
+    }
+
+    .signup-btn {
+      width: 100%;
+      background-color: goldenrod;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      padding: 12px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .bottom-text {
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: 15px;
+    }
+
+    .bottom-text a {
+      color: orange;
+      text-decoration: none;
+    }
+
+    .bottom-text a:hover {
+      text-decoration: underline;
+    }
+
+    h6 {
+      display: block;
+      text-align: center;
+      color: gray;
+      margin-top: 10px;
+    }
+     .home{
+      display: flex;
+      justify-content: end;
+      text-decoration: none;
+      color: darkred;
+    }
+
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <img src="../images/logo.png" alt="Bookshelf logo" />
+    <h1>Welcome to Bookshelf ✨</h1>
+    <p class="words">Continue with your Social account</p>
+
+    <div class="social">
+      <button class="google">Google</button>
+      <button id="fb">Facebook</button>
+    </div>
+
+    <p class="words">Or create a new Bookshelf account:</p>
+
+    <form>
+      <input type="email" placeholder="Enter your email..." required />
+      <input type="text" placeholder="Enter your name..." required />
+      <input type="password" placeholder="Password..." required />
+
+      <div class="checkbox">
+        <label><input type="checkbox" /> Yes, I'm an author</label>
+      </div>
+
+      <button type="submit" class="signup-btn">Sign up</button>
+    </form>
+
+    <div class="bottom-text">
+      <p>Already got an account? <a href="./login.html">Log in</a></p>
+    </div>
+
+    <h6>By creating an account, you accept our <a href="#">terms of service</a>.</h6>
+        <a href="./home.html" class="home">- Back to Home</a>
+  </div>
+</body>
+</html>

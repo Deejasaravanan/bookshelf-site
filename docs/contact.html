@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup | Bookshelf</title>
+  <style>
+    body {
+      background-color: antiquewhite;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .container {
+      background-color: whitesmoke;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .container img {
+      width: 100px;
+      display: block;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: "Dancing Script", cursive;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="feedback"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: none
+    }
+
+    .submit {
+      width: 100%;
+      background-color: goldenrod;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      padding: 12px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .footer-follow h3 {
+    display: flex;
+    justify-content: center;
+    color:grey;
+    font-weight: bold;
+    margin-bottom: 8px;
+    }
+    .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+
+    .social-icons a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: grey;
+    transition: transform 0.3s;
+    }
+    textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+
+    }
+     .home{
+      display: flex;
+      justify-content: end;
+      text-decoration: none;
+      color: darkred;
+      margin-top: 10px;
+    }
+
+
+
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <img src="../images/logo.png" alt="Bookshelf logo" />
+    <h1>Having Any Questions or Feedback ?</h1>
+    <h1>We’d love to hear from you!</h1>
+    <form>
+        <input type="text" placeholder="Enter your name..." required />
+        <input type="email" placeholder="Enter your email..." required />
+        <textarea placeholder="Type your message..." rows="4" required></textarea>
+        <button type="submit" class="submit">submit</button>
+    </form>
+        <a href="./home.html" class="home">- Back to Home</a>
+
+
+
+    <div class="footer-follow">
+    <h3>CONNECT</h3>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
